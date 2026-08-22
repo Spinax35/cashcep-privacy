@@ -1,41 +1,104 @@
-Cashcep — Gizlilik Politikası
-Son güncelleme: 22 Ağustos 2026
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<title>Cashcep — Gizlilik Politikası</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.65; color: #2A2A28; background: #F7F3EC; }
+  h1 { color: #1B3A3A; font-size: 26px; }
+  h2 { color: #1B3A3A; font-size: 18px; margin-top: 36px; border-bottom: 1px solid #DDD3BC; padding-bottom: 8px; }
+  .updated { color: #7A7266; font-size: 13px; margin-bottom: 28px; }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  .contact { background: #EFE8D8; border-radius: 10px; padding: 16px 18px; margin-top: 10px; }
+  a { color: #C89B3C; }
+  table { width: 100%; border-collapse: collapse; margin-top: 12px; }
+  th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #DDD3BC; font-size: 14px; }
+  th { color: #7A7266; font-weight: 600; }
+</style>
+</head>
+<body>
 
-Bu belge, Cashcep mobil uygulamasının ("Cashcep", "uygulama") hangi verileri topladığını, bu verileri nasıl kullandığını ve sakladığını, ve kullanıcıların hangi haklara sahip olduğunu açıklar.
+<h1>Cashcep — Gizlilik Politikası</h1>
+<p class="updated">Son güncelleme: 22 Ağustos 2026</p>
 
-1. Hangi verileri topluyoruz
-Veri	Ne zaman toplanır	Amaç
-E-posta adresi	Hesap oluşturduğunda	Giriş yapmanı ve verilerini cihazlar arasında senkronlamanı sağlamak
-Şifre	Hesap oluşturduğunda	Hesabına giriş; şifren bizde düz metin olarak tutulmaz, kimlik doğrulama sağlayıcımız (Supabase) tarafından şifrelenmiş biçimde saklanır
-Finansal veriler (gelir, gider, bütçe, birikim hedefleri, portföy)	Uygulamayı kullandıkça	Uygulamanın temel işlevi — bütçe takibini sağlamak
-Bildirim tercihleri, dil, para birimi, kilit ayarı	Ayarları değiştirdiğinde	Uygulama deneyimini kişiselleştirmek
-Misafir modunda (hesap oluşturmadan) kullanıyorsan, finansal verilerin yalnızca cihazında saklanır ve bize hiç ulaşmaz.
+<p>
+  Bu belge, Cashcep mobil uygulamasının ("Cashcep", "uygulama") hangi verileri topladığını,
+  bu verileri nasıl kullandığını ve sakladığını, ve kullanıcıların hangi haklara sahip olduğunu açıklar.
+</p>
 
-2. Toplamadığımız veriler
-Konum bilgisi
-Kişi listesi, fotoğraflar, mikrofon veya kamera erişimi
-Reklam kimlikleri veya üçüncü taraf reklam ağlarıyla paylaşılan veri (uygulamada reklam bulunmamaktadır)
-Banka hesabı veya kart bilgileri — Cashcep hiçbir bankaya bağlanmaz, tüm tutarları elle girersin
-3. Verilerin nerede saklandığı
-Hesabına ait finansal veriler Supabase altyapısında barındırılır ve satır bazlı erişim kontrolü (Row Level Security) ile korunur — yalnızca senin hesabın kendi verine erişebilir. Oturum bilgilerin cihazında, Android Keystore / iOS Keychain gibi donanım destekli güvenli depolama alanında tutulur.
+<h2>1. Hangi verileri topluyoruz</h2>
+<table>
+  <tr><th>Veri</th><th>Ne zaman toplanır</th><th>Amaç</th></tr>
+  <tr><td>E-posta adresi</td><td>Hesap oluşturduğunda</td><td>Giriş yapmanı ve verilerini cihazlar arasında senkronlamanı sağlamak</td></tr>
+  <tr><td>Şifre</td><td>Hesap oluşturduğunda</td><td>Hesabına giriş; şifren bizde düz metin olarak tutulmaz, kimlik doğrulama sağlayıcımız (Supabase) tarafından şifrelenmiş biçimde saklanır</td></tr>
+  <tr><td>Finansal veriler (gelir, gider, bütçe, birikim hedefleri, portföy)</td><td>Uygulamayı kullandıkça</td><td>Uygulamanın temel işlevi — bütçe takibini sağlamak</td></tr>
+  <tr><td>Bildirim tercihleri, dil, para birimi, kilit ayarı</td><td>Ayarları değiştirdiğinde</td><td>Uygulama deneyimini kişiselleştirmek</td></tr>
+</table>
 
-4. Bildirimler
-Yaklaşan ödeme hatırlatmaları ve haftalık/aylık özet bildirimleri tamamen cihazında, yerel olarak zamanlanır. Bu bildirimler için hiçbir veri sunucularımıza gönderilmez.
+<p>
+  <strong>Misafir modunda</strong> (hesap oluşturmadan) kullanıyorsan, finansal verilerin
+  yalnızca cihazında saklanır ve bize hiç ulaşmaz.
+</p>
 
-5. Biyometrik kilit
-Face ID / parmak izi doğrulaması tamamen cihazın işletim sistemi tarafından yönetilir. Cashcep biyometrik verilerine hiçbir zaman erişmez veya bunları saklamaz.
+<h2>2. Toplamadığımız veriler</h2>
+<ul>
+  <li>Konum bilgisi</li>
+  <li>Kişi listesi, fotoğraflar, mikrofon veya kamera erişimi</li>
+  <li>Reklam kimlikleri veya üçüncü taraf reklam ağlarıyla paylaşılan veri (uygulamada reklam bulunmamaktadır)</li>
+  <li>Banka hesabı veya kart bilgileri — Cashcep hiçbir bankaya bağlanmaz, tüm tutarları elle girersin</li>
+</ul>
 
-6. Verilerini silme
-Uygulama içinden, hesap ayarlarından "Hesabı Sil" seçeneğiyle hesabını ve tüm finansal verilerini kalıcı olarak silebilirsin. Bu işlem geri alınamaz. Misafir modunda kullanıyorsan, uygulamayı cihazından kaldırman verilerini siler.
+<h2>3. Verilerin nerede saklandığı</h2>
+<p>
+  Hesabına ait finansal veriler <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a>
+  altyapısında barındırılır ve satır bazlı erişim kontrolü (Row Level Security) ile korunur —
+  yalnızca senin hesabın kendi verine erişebilir. Oturum bilgilerin cihazında,
+  Android Keystore / iOS Keychain gibi donanım destekli güvenli depolama alanında tutulur.
+</p>
 
-7. Üçüncü taraflarla paylaşım
-Verilerini hiçbir üçüncü tarafa satmıyoruz veya pazarlama amacıyla paylaşmıyoruz. Verilerin yalnızca uygulamanın çalışması için gerekli altyapı sağlayıcımız (Supabase) ile, yukarıda açıklanan amaçla paylaşılır.
+<h2>4. Bildirimler</h2>
+<p>
+  Yaklaşan ödeme hatırlatmaları ve haftalık/aylık özet bildirimleri tamamen cihazında,
+  yerel olarak zamanlanır. Bu bildirimler için hiçbir veri sunucularımıza gönderilmez.
+</p>
 
-8. Çocukların gizliliği
-Cashcep 13 yaş altındaki çocuklara yönelik değildir ve bilerek onlardan veri toplamaz.
+<h2>5. Biyometrik kilit</h2>
+<p>
+  Face ID / parmak izi doğrulaması tamamen cihazın işletim sistemi tarafından yönetilir.
+  Cashcep biyometrik verilerine hiçbir zaman erişmez veya bunları saklamaz.
+</p>
 
-9. Değişiklikler
-Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişikliklerde uygulama içinde bilgilendirme yapılır.
+<h2>6. Verilerini silme</h2>
+<p>
+  Uygulama içinden, hesap ayarlarından "Hesabı Sil" seçeneğiyle hesabını ve tüm
+  finansal verilerini kalıcı olarak silebilirsin. Bu işlem geri alınamaz.
+  Misafir modunda kullanıyorsan, uygulamayı cihazından kaldırman verilerini siler.
+</p>
 
-10. İletişim
-Gizlilikle ilgili sorular için: cashcep@hotmail.com
+<h2>7. Üçüncü taraflarla paylaşım</h2>
+<p>
+  Verilerini hiçbir üçüncü tarafa satmıyoruz veya pazarlama amacıyla paylaşmıyoruz.
+  Verilerin yalnızca uygulamanın çalışması için gerekli altyapı sağlayıcımız
+  (Supabase) ile, yukarıda açıklanan amaçla paylaşılır.
+</p>
+
+<h2>8. Çocukların gizliliği</h2>
+<p>
+  Cashcep 13 yaş altındaki çocuklara yönelik değildir ve bilerek onlardan veri toplamaz.
+</p>
+
+<h2>9. Değişiklikler</h2>
+<p>
+  Bu politikayı zaman zaman güncelleyebiliriz. Önemli değişikliklerde uygulama içinde
+  bilgilendirme yapılır.
+</p>
+
+<h2>10. İletişim</h2>
+<div class="contact">
+  <p>Gizlilikle ilgili sorular için: <strong>cashcep@hotmail.com</strong></p>
+</div>
+
+</body>
+</html>
